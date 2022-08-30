@@ -44,10 +44,6 @@ const CharInfo = (props) => {
         updateChar()
     },[props.charId])
 
-    // useEffect(() => {
-    //     updateChar()
-    // },[props.charId])
-
     const skeleton = char || loading || error ? null : <Skeleton />
     const errorMessage = error ? <ErrorMessage/> : null;
     const load = loading ? <Spinner/> : null;
